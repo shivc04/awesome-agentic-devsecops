@@ -1,0 +1,635 @@
+{
+  "site": {
+    "name": "Awesome Agentic DevSecOps",
+    "tagline": "A curated atlas of AI agents that secure the software lifecycle — from threat modeling to SOC response.",
+    "repo": "shivc04/awesome-agentic-devsecops",
+    "url": "https://shivc04.github.io/awesome-agentic-devsecops/"
+  },
+  "categories": [
+    {
+      "id": "threat-modeling",
+      "title": "Threat Modeling & Design",
+      "blurb": "Agents that reason about architecture and attack surface before a line of code ships."
+    },
+    {
+      "id": "code-security",
+      "title": "Code Security & Review",
+      "blurb": "AI reviewers and fixers that find, triage, and patch vulnerabilities in source code and pull requests."
+    },
+    {
+      "id": "supply-chain",
+      "title": "Dependencies & Supply Chain",
+      "blurb": "Agents watching what you import — malicious packages, risky upgrades, and reachability."
+    },
+    {
+      "id": "infra-cloud",
+      "title": "Infrastructure, Cloud & Kubernetes",
+      "blurb": "AI for IaC remediation, cluster diagnosis, and cloud-native runtime security."
+    },
+    {
+      "id": "offensive",
+      "title": "Offensive Security & Pentesting",
+      "blurb": "Autonomous red teams: agents that probe, exploit, fuzz, and validate — so defenders find it first."
+    },
+    {
+      "id": "soc",
+      "title": "SOC, Detection & Response",
+      "blurb": "AI analysts that triage alerts, investigate incidents, and write detections around the clock."
+    },
+    {
+      "id": "llm-security",
+      "title": "LLM & Agent Security",
+      "blurb": "Securing the AI itself — red teaming, guardrails, and scanners for models and agentic workflows."
+    },
+    {
+      "id": "compliance",
+      "title": "Compliance & Governance",
+      "blurb": "Agents that collect evidence, map controls, and keep audits continuous instead of annual."
+    },
+    {
+      "id": "frameworks",
+      "title": "Frameworks & Building Blocks",
+      "blurb": "The foundations for building your own security agents — orchestration, tools, and MCP servers."
+    }
+  ],
+  "agents": [
+    {
+      "name": "STRIDE GPT",
+      "category": "threat-modeling",
+      "type": "open-source",
+      "github": "mrwadams/stride-gpt",
+      "url": "https://github.com/mrwadams/stride-gpt",
+      "description": "AI-powered threat modeling that generates STRIDE threat models, attack trees, and mitigations from an application description.",
+      "tags": ["STRIDE", "attack-trees", "LLM"]
+    },
+    {
+      "name": "IriusRisk Jeff",
+      "category": "threat-modeling",
+      "type": "commercial",
+      "url": "https://www.iriusrisk.com",
+      "description": "AI threat-modeling assistant inside IriusRisk that turns architecture diagrams and design docs into draft threat models.",
+      "tags": ["threat-modeling", "enterprise"]
+    },
+    {
+      "name": "Claude Code Security Review",
+      "category": "code-security",
+      "type": "open-source",
+      "github": "anthropics/claude-code-security-review",
+      "url": "https://github.com/anthropics/claude-code-security-review",
+      "description": "GitHub Action from Anthropic that runs Claude against every pull request for semantic, context-aware security review.",
+      "tags": ["GitHub Action", "code-review", "PR"]
+    },
+    {
+      "name": "Aardvark (Codex Security)",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://openai.com/index/introducing-aardvark/",
+      "description": "OpenAI's agentic security researcher: continuously scans repos, validates exploitability in a sandbox, and proposes patches. Now part of Codex Security.",
+      "tags": ["autonomous", "research-preview"]
+    },
+    {
+      "name": "GitHub Copilot Autofix",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://github.com/features/security",
+      "description": "AI-generated fixes for CodeQL code-scanning alerts, proposed directly on pull requests via GitHub Advanced Security.",
+      "tags": ["CodeQL", "autofix", "PR"]
+    },
+    {
+      "name": "Semgrep Assistant",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://semgrep.dev",
+      "description": "AI layer of the Semgrep AppSec platform that triages findings, filters false positives, and drafts remediation guidance.",
+      "tags": ["SAST", "triage"]
+    },
+    {
+      "name": "Snyk Agent Fix",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://snyk.io",
+      "description": "Snyk's DeepCode AI engine powering automated vulnerability fixes and self-healing pull requests, trained on curated security data.",
+      "tags": ["SAST", "autofix"]
+    },
+    {
+      "name": "GitLab Duo Vulnerability Resolution",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://about.gitlab.com/gitlab-duo/",
+      "description": "GitLab's AI suite that explains SAST vulnerabilities and opens merge requests to resolve them inside the DevSecOps platform.",
+      "tags": ["SAST", "merge-request"]
+    },
+    {
+      "name": "Corgea",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://corgea.com",
+      "description": "AI AppSec engineer that scans with business-logic context, filters false positives, and auto-generates fixes as pull requests.",
+      "tags": ["SAST", "autofix", "business-logic"]
+    },
+    {
+      "name": "Mobb",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://mobb.ai",
+      "description": "Automatic vulnerability fixer that consumes SAST reports (Snyk, Checkmarx, CodeQL, Semgrep) and commits verified remediations.",
+      "tags": ["autofix", "SAST-agnostic"]
+    },
+    {
+      "name": "Pixee",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://pixee.ai",
+      "description": "Automated product-security engineer (pixeebot) that continuously hardens code and fixes findings through pull requests.",
+      "tags": ["hardening", "PR-bot"]
+    },
+    {
+      "name": "ZeroPath",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://zeropath.com",
+      "description": "AI-native SAST that finds business-logic and code vulnerabilities and ships PR-ready patches.",
+      "tags": ["SAST", "business-logic"]
+    },
+    {
+      "name": "DryRun Security",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://www.dryrun.security",
+      "description": "Contextual security analysis for pull requests using AI agents that reason about authz, injection, and business-logic risk.",
+      "tags": ["PR", "contextual-analysis"]
+    },
+    {
+      "name": "Vulnhuntr",
+      "category": "code-security",
+      "type": "open-source",
+      "github": "protectai/vulnhuntr",
+      "url": "https://github.com/protectai/vulnhuntr",
+      "description": "LLM-based static analyzer that autonomously chains multi-step, remotely exploitable vulnerabilities in Python code — credited with real 0-days.",
+      "tags": ["0-day", "Python", "LLM-SAST"]
+    },
+    {
+      "name": "Ghost Security",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://ghost.security",
+      "description": "Agentic application-security platform whose autonomous agents map applications, APIs, and vulnerabilities at enterprise scale.",
+      "tags": ["appsec", "API"]
+    },
+    {
+      "name": "Socket",
+      "category": "supply-chain",
+      "type": "commercial",
+      "url": "https://socket.dev",
+      "description": "Supply-chain security that uses AI to analyze package behavior and block malicious or risky open-source dependencies before they land.",
+      "tags": ["npm", "PyPI", "malware"]
+    },
+    {
+      "name": "Endor Labs",
+      "category": "supply-chain",
+      "type": "commercial",
+      "url": "https://www.endorlabs.com",
+      "description": "Reachability-based SCA with AI agents that review code changes, prioritize exploitable dependency risk, and guide safe upgrades.",
+      "tags": ["SCA", "reachability"]
+    },
+    {
+      "name": "Aikido Security",
+      "category": "supply-chain",
+      "type": "commercial",
+      "url": "https://www.aikido.dev",
+      "description": "Code-to-cloud security platform with AI AutoFix spanning dependencies, SAST, secrets, and IaC findings.",
+      "tags": ["autofix", "all-in-one"]
+    },
+    {
+      "name": "K8sGPT",
+      "category": "infra-cloud",
+      "type": "open-source",
+      "github": "k8sgpt-ai/k8sgpt",
+      "url": "https://github.com/k8sgpt-ai/k8sgpt",
+      "description": "CNCF tool that scans Kubernetes clusters and explains problems in plain English — SRE expertise encoded as analyzers with pluggable LLM backends.",
+      "tags": ["Kubernetes", "CNCF", "diagnosis"]
+    },
+    {
+      "name": "kubectl-ai",
+      "category": "infra-cloud",
+      "type": "open-source",
+      "github": "GoogleCloudPlatform/kubectl-ai",
+      "url": "https://github.com/GoogleCloudPlatform/kubectl-ai",
+      "description": "AI-powered Kubernetes agent from Google that translates natural-language intent into safe kubectl operations.",
+      "tags": ["Kubernetes", "CLI"]
+    },
+    {
+      "name": "HolmesGPT",
+      "category": "infra-cloud",
+      "type": "open-source",
+      "github": "HolmesGPT/holmesgpt",
+      "url": "https://github.com/HolmesGPT/holmesgpt",
+      "description": "24/7 AI on-call agent that investigates alerts from Prometheus, PagerDuty, and more by pulling live cluster data and correlating root cause.",
+      "tags": ["AIOps", "root-cause", "alerts"]
+    },
+    {
+      "name": "Gomboc.ai",
+      "category": "infra-cloud",
+      "type": "commercial",
+      "url": "https://gomboc.ai",
+      "description": "Deterministic AI remediation for cloud infrastructure: generates policy-compliant fixes for Terraform and CloudFormation.",
+      "tags": ["IaC", "Terraform", "remediation"]
+    },
+    {
+      "name": "Sysdig Sage",
+      "category": "infra-cloud",
+      "type": "commercial",
+      "url": "https://sysdig.com",
+      "description": "AI cloud-security analyst built on runtime insights — multi-step reasoning over CNAPP findings from detection to remediation.",
+      "tags": ["CNAPP", "runtime"]
+    },
+    {
+      "name": "XBOW",
+      "category": "offensive",
+      "type": "commercial",
+      "url": "https://xbow.com",
+      "description": "Autonomous penetration tester that reached #1 on HackerOne's US leaderboard, finding and validating exploits without human operators.",
+      "tags": ["autonomous-pentest", "HackerOne"]
+    },
+    {
+      "name": "PentestGPT",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "GreyDGL/PentestGPT",
+      "url": "https://github.com/GreyDGL/PentestGPT",
+      "description": "GPT-powered penetration-testing assistant that guides recon, exploitation, and privilege escalation — backed by USENIX Security research.",
+      "tags": ["pentest", "assistant"]
+    },
+    {
+      "name": "PentAGI",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "description": "Fully autonomous multi-agent pentesting system — specialized agents with isolated Docker tooling, long-term memory, and reporting.",
+      "tags": ["multi-agent", "autonomous-pentest"]
+    },
+    {
+      "name": "hackingBuddyGPT",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "ipa-lab/hackingBuddyGPT",
+      "url": "https://github.com/ipa-lab/hackingBuddyGPT",
+      "description": "Research framework from TU Wien for building LLM agents that attempt privilege escalation and web pentests autonomously.",
+      "tags": ["research", "privesc"]
+    },
+    {
+      "name": "HexStrike AI",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "0x4m4/hexstrike-ai",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "description": "MCP server that lets AI agents orchestrate 150+ security tools — nmap, Burp, Metasploit — for automated recon and exploitation workflows.",
+      "tags": ["MCP", "tool-orchestration"]
+    },
+    {
+      "name": "BurpGPT",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "aress31/burpgpt",
+      "url": "https://github.com/aress31/burpgpt",
+      "description": "Burp Suite extension that adds LLM-powered passive scanning and traffic analysis to web security testing.",
+      "tags": ["Burp", "web"]
+    },
+    {
+      "name": "Nebula",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "berylliumsec/nebula",
+      "url": "https://github.com/berylliumsec/nebula",
+      "description": "AI-powered ethical-hacking assistant that wraps nmap, ZAP, and other tools with natural-language control.",
+      "tags": ["assistant", "recon"]
+    },
+    {
+      "name": "OSS-Fuzz-Gen",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "google/oss-fuzz-gen",
+      "url": "https://github.com/google/oss-fuzz-gen",
+      "description": "Google's LLM framework that generates and improves fuzz targets for OSS-Fuzz — already surfacing real-world vulnerabilities.",
+      "tags": ["fuzzing", "Google"]
+    },
+    {
+      "name": "Google Big Sleep",
+      "category": "offensive",
+      "type": "research",
+      "url": "https://googleprojectzero.blogspot.com/2024/10/from-naptime-to-big-sleep.html",
+      "description": "Project Zero × DeepMind agent that hunts memory-safety bugs in real software — found an exploitable SQLite flaw before release.",
+      "tags": ["vulnerability-research", "DeepMind"]
+    },
+    {
+      "name": "Atlantis",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "Team-Atlanta/aixcc-afc-atlantis",
+      "url": "https://github.com/Team-Atlanta/aixcc-afc-atlantis",
+      "description": "Team Atlanta's cyber-reasoning system that won DARPA's AI Cyber Challenge — autonomous vulnerability discovery and patching at scale.",
+      "tags": ["AIxCC", "CRS", "auto-patching"]
+    },
+    {
+      "name": "Buttercup",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "trailofbits/buttercup",
+      "url": "https://github.com/trailofbits/buttercup",
+      "description": "Trail of Bits' open-sourced AIxCC cyber-reasoning system: agents that autonomously find and patch vulnerabilities in C and Java.",
+      "tags": ["AIxCC", "CRS", "fuzzing"]
+    },
+    {
+      "name": "Cybench",
+      "category": "offensive",
+      "type": "research",
+      "github": "andyzorigin/cybench",
+      "url": "https://github.com/andyzorigin/cybench",
+      "description": "Stanford benchmark evaluating LLM agents on professional CTF tasks — the reference eval for offensive agent capability.",
+      "tags": ["benchmark", "CTF"]
+    },
+    {
+      "name": "Escape",
+      "category": "offensive",
+      "type": "commercial",
+      "url": "https://escape.tech",
+      "description": "Agentic DAST for APIs and business logic — AI agents explore, attack, and validate findings against running applications.",
+      "tags": ["DAST", "API"]
+    },
+    {
+      "name": "Microsoft Security Copilot",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot",
+      "description": "Microsoft's generative-AI security suite with agents for phishing triage, alert investigation, and posture across Defender and Sentinel.",
+      "tags": ["SOC", "Microsoft"]
+    },
+    {
+      "name": "CrowdStrike Charlotte AI",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.crowdstrike.com/platform/charlotte-ai/",
+      "description": "Agentic security analyst for the Falcon platform — bounded autonomous reasoning for detection triage and response.",
+      "tags": ["EDR", "triage"]
+    },
+    {
+      "name": "SentinelOne Purple AI",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.sentinelone.com/platform/purple/",
+      "description": "AI security analyst that turns natural language into threat hunts, summarizes incidents, and automates investigation on Singularity.",
+      "tags": ["threat-hunting", "XDR"]
+    },
+    {
+      "name": "Dropzone AI",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.dropzone.ai",
+      "description": "AI SOC analyst that autonomously investigates every alert end-to-end, producing decision-ready reports without playbooks.",
+      "tags": ["SOC", "tier-1"]
+    },
+    {
+      "name": "Prophet Security",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.prophetsecurity.ai",
+      "description": "Agentic AI SOC platform that triages and investigates alerts automatically, cutting response times from hours to minutes.",
+      "tags": ["SOC", "triage"]
+    },
+    {
+      "name": "Radiant Security",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://radiantsecurity.com",
+      "description": "AI-powered SOC that performs deep triage on 100% of alerts and proposes tailored response actions.",
+      "tags": ["SOC", "response"]
+    },
+    {
+      "name": "Intezer",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://intezer.com",
+      "description": "Autonomous SOC that emulates a tier-1 analyst — investigates alerts, reverse-engineers files, and escalates only what matters.",
+      "tags": ["SOC", "malware-analysis"]
+    },
+    {
+      "name": "Torq HyperSOC",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://torq.io",
+      "description": "Hyperautomation platform whose agentic AI runs SOC case investigation and remediation workflows at machine speed.",
+      "tags": ["SOAR", "automation"]
+    },
+    {
+      "name": "Simbian",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.simbian.ai",
+      "description": "AI agents for security operations that autonomously handle alert triage, threat hunting, and security questionnaires.",
+      "tags": ["SOC", "agents"]
+    },
+    {
+      "name": "Uncoder AI",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://uncoder.io",
+      "description": "SOC Prime's AI for detection engineering — translates detection rules across SIEM/EDR query languages and drafts rules from threat reports.",
+      "tags": ["detection-engineering", "SIEM"]
+    },
+    {
+      "name": "VirusTotal Code Insight",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://blog.virustotal.com/2023/04/introducing-virustotal-code-insight.html",
+      "description": "Google's AI feature that explains what submitted code and scripts actually do, summarizing malicious behavior in natural language.",
+      "tags": ["malware-analysis", "VirusTotal"]
+    },
+    {
+      "name": "Google Sec-Gemini",
+      "category": "soc",
+      "type": "research",
+      "url": "https://security.googleblog.com/2025/04/google-launches-sec-gemini-v1-new.html",
+      "description": "Google's experimental security-specialist model combining Gemini reasoning with near-real-time threat intelligence.",
+      "tags": ["threat-intel", "model"]
+    },
+    {
+      "name": "garak",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "NVIDIA/garak",
+      "url": "https://github.com/NVIDIA/garak",
+      "description": "NVIDIA's LLM vulnerability scanner — probes models for injection, jailbreaks, data leakage, and toxicity. Think nmap for LLMs.",
+      "tags": ["red-teaming", "scanner"]
+    },
+    {
+      "name": "PyRIT",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "microsoft/PyRIT",
+      "url": "https://github.com/microsoft/PyRIT",
+      "description": "Microsoft's Python Risk Identification Toolkit for automated generative-AI red teaming, built by the Microsoft AI Red Team.",
+      "tags": ["red-teaming", "Microsoft"]
+    },
+    {
+      "name": "promptfoo",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "description": "LLM red-teaming and eval framework — adversarial testing, jailbreak and injection probes, and CI gates for AI applications.",
+      "tags": ["red-teaming", "CI", "evals"]
+    },
+    {
+      "name": "LLM Guard",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "protectai/llm-guard",
+      "url": "https://github.com/protectai/llm-guard",
+      "description": "Security toolkit that sanitizes and validates LLM inputs and outputs — prompt-injection detection, PII redaction, content policies.",
+      "tags": ["guardrails", "sanitization"]
+    },
+    {
+      "name": "Rebuff",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "protectai/rebuff",
+      "url": "https://github.com/protectai/rebuff",
+      "description": "Self-hardening prompt-injection detector using heuristics, a dedicated LLM check, canary tokens, and a vector store of known attacks.",
+      "tags": ["prompt-injection", "detection"]
+    },
+    {
+      "name": "NeMo Guardrails",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "NVIDIA-NeMo/Guardrails",
+      "url": "https://github.com/NVIDIA-NeMo/Guardrails",
+      "description": "NVIDIA toolkit for adding programmable safety and security rails to LLM applications and conversational agents.",
+      "tags": ["guardrails", "NVIDIA"]
+    },
+    {
+      "name": "PurpleLlama",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "meta-llama/PurpleLlama",
+      "url": "https://github.com/meta-llama/PurpleLlama",
+      "description": "Meta's umbrella of LLM security tools — Llama Guard moderation, CodeShield insecure-code filtering, and CyberSecEval benchmarks.",
+      "tags": ["Meta", "benchmarks", "moderation"]
+    },
+    {
+      "name": "Giskard",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "Giskard-AI/giskard-oss",
+      "url": "https://github.com/Giskard-AI/giskard-oss",
+      "description": "Open-source evaluation and security testing that automatically detects performance, bias, and security issues in AI models and agents.",
+      "tags": ["evals", "testing"]
+    },
+    {
+      "name": "DeepTeam",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "confident-ai/deepteam",
+      "url": "https://github.com/confident-ai/deepteam",
+      "description": "LLM red-teaming framework that simulates 40+ attack types against agents and chatbots, mapped to OWASP LLM Top 10 and NIST AI RMF.",
+      "tags": ["red-teaming", "OWASP-LLM"]
+    },
+    {
+      "name": "Agentic Radar",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "splx-ai/agentic-radar",
+      "url": "https://github.com/splx-ai/agentic-radar",
+      "description": "Scanner for agentic workflows (LangGraph, CrewAI, n8n, OpenAI Agents) that maps dependencies, detects vulnerabilities, and audits tool use.",
+      "tags": ["agent-security", "scanner"]
+    },
+    {
+      "name": "Vanta AI Agent",
+      "category": "compliance",
+      "type": "commercial",
+      "url": "https://www.vanta.com",
+      "description": "AI agent for continuous compliance — automates evidence collection, policy gap analysis, and SOC 2 / ISO 27001 audit preparation.",
+      "tags": ["SOC2", "evidence"]
+    },
+    {
+      "name": "Drata AI",
+      "category": "compliance",
+      "type": "commercial",
+      "url": "https://drata.com",
+      "description": "Compliance automation with AI that maps controls, drafts policies, and answers security questionnaires.",
+      "tags": ["GRC", "questionnaires"]
+    },
+    {
+      "name": "CAI (Cybersecurity AI)",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "aliasrobotics/cai",
+      "url": "https://github.com/aliasrobotics/cai",
+      "description": "Open framework for building bug-bounty-ready cybersecurity agents, with hundreds of built-in tools and real-world CTF pedigree.",
+      "tags": ["framework", "bug-bounty"]
+    },
+    {
+      "name": "CrewAI",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "crewAIInc/crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "description": "Role-based multi-agent framework — a common foundation for security crews (triage analyst + threat hunter + reporter).",
+      "tags": ["multi-agent", "orchestration"]
+    },
+    {
+      "name": "LangGraph",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "langchain-ai/langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "description": "Stateful agent-orchestration graphs, widely used for security workflows that need checkpoints, retries, and human-in-the-loop gates.",
+      "tags": ["orchestration", "stateful"]
+    },
+    {
+      "name": "Microsoft AutoGen",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "microsoft/autogen",
+      "url": "https://github.com/microsoft/autogen",
+      "description": "Multi-agent conversation framework from Microsoft Research — the basis for many autonomous SOC and code-analysis prototypes.",
+      "tags": ["multi-agent", "research"]
+    },
+    {
+      "name": "MCP Reference Servers",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "description": "The open standard for wiring agents to tools — reference servers connect models to filesystems, GitHub, databases, and more.",
+      "tags": ["MCP", "integrations"]
+    },
+    {
+      "name": "MCP for Security",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "cyproxio/mcp-for-security",
+      "url": "https://github.com/cyproxio/mcp-for-security",
+      "description": "Collection of MCP servers for security tooling — nmap, ffuf, masscan, sqlmap — so any MCP-capable agent can drive them.",
+      "tags": ["MCP", "tooling"]
+    },
+    {
+      "name": "Semgrep MCP",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "semgrep/mcp",
+      "url": "https://github.com/semgrep/mcp",
+      "description": "Official MCP server exposing Semgrep scanning to AI agents and coding assistants.",
+      "tags": ["MCP", "SAST"]
+    },
+    {
+      "name": "Fabric",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "danielmiessler/Fabric",
+      "url": "https://github.com/danielmiessler/Fabric",
+      "description": "Open framework of crowdsourced AI patterns, including security staples like analyze_threat_report, create_stride_threat_model, and write_semgrep_rule.",
+      "tags": ["prompts", "patterns"]
+    }
+  ]
+}
