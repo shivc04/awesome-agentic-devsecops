@@ -5,6 +5,8 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+  schedule:
+    - cron: "0 5 * * 1" # Mondays 05:00 UTC — redeploy with fresh star counts
   workflow_dispatch:
 
 permissions:
@@ -33,6 +35,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
         working-directory: web
+
+      - name: Refresh GitHub star counts
+        run: node scripts/update-stars.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build site
         run: npm run build

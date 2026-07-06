@@ -5,6 +5,7 @@
   "description": "A curated atlas of AI agents that secure the software lifecycle — from threat modeling to SOC response.",
   "scripts": {
     "readme": "node scripts/generate-readme.mjs",
+    "stars": "node scripts/update-stars.mjs",
     "dev": "npm --prefix web run dev",
     "build": "npm --prefix web run build"
   }

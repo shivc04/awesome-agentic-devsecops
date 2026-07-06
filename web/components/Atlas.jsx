@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   Siren,
   Sparkles,
+  Star,
   X,
 } from "lucide-react";
 
@@ -38,6 +39,11 @@ const TYPE_LABELS = {
   research: "Research",
 };
 
+function formatStars(count) {
+  if (count >= 1000) return `${(count / 1000).toFixed(1).replace(/\.0$/, "")}k`;
+  return String(count);
+}
+
 function matchesQuery(agent, query) {
   if (!query) return true;
   const haystack = [agent.name, agent.description, ...(agent.tags ?? [])]
@@ -50,7 +56,7 @@ function matchesQuery(agent, query) {
     .every((term) => haystack.includes(term));
 }
 
-function AgentCard({ agent }) {
+function AgentCard({ agent, starCount }) {
   const githubUrl = agent.github ? `https://github.com/${agent.github}` : null;
   const showWebsite = agent.url && agent.url !== githubUrl;
 
@@ -73,6 +79,12 @@ function AgentCard({ agent }) {
           <a href={githubUrl} target="_blank" rel="noreferrer">
             <Github size={15} aria-hidden="true" />
             GitHub
+            {typeof starCount === "number" && (
+              <span className="stars" title={`${starCount.toLocaleString()} stars`}>
+                <Star size={12} aria-hidden="true" />
+                {formatStars(starCount)}
+              </span>
+            )}
           </a>
         )}
         {showWebsite && (
@@ -86,7 +98,7 @@ function AgentCard({ agent }) {
   );
 }
 
-export default function Atlas({ data }) {
+export default function Atlas({ data, stars = {} }) {
   const { site, categories, agents } = data;
   const [query, setQuery] = useState("");
   const [activeType, setActiveType] = useState("all");
@@ -262,7 +274,7 @@ export default function Atlas({ data }) {
                 </header>
                 <div className="grid">
                   {section.agents.map((agent) => (
-                    <AgentCard key={agent.name} agent={agent} />
+                    <AgentCard key={agent.name} agent={agent} starCount={stars[agent.github]} />
                   ))}
                 </div>
               </section>

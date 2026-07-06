@@ -38,6 +38,8 @@ Everything — the README tables **and** the [website](https://shivc04.github.io
 npm run readme
 ```
 
+Star counts on the website come from `data/stars.json`, which is refreshed automatically at deploy time (`npm run stars`) — never edit it by hand.
+
 3. **Open a pull request** with both the data change and the regenerated README.
 
 ## Inclusion criteria
