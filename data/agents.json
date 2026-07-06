@@ -244,6 +244,15 @@
       "tags": ["CNAPP", "runtime"]
     },
     {
+      "name": "kagent",
+      "category": "infra-cloud",
+      "type": "open-source",
+      "github": "kagent-dev/kagent",
+      "url": "https://github.com/kagent-dev/kagent",
+      "description": "CNCF framework for running agentic AI natively in Kubernetes — declarative agents and MCP tools for DevOps, troubleshooting, and security operations.",
+      "tags": ["Kubernetes", "CNCF", "MCP"]
+    },
+    {
       "name": "XBOW",
       "category": "offensive",
       "type": "commercial",
@@ -544,6 +553,24 @@
       "tags": ["agent-security", "scanner"]
     },
     {
+      "name": "agentgateway",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "agentgateway/agentgateway",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "description": "Rust data plane for agentic AI — authentication, authorization, guardrails, and observability for MCP tool calls and agent-to-agent traffic.",
+      "tags": ["MCP-gateway", "proxy", "governance"]
+    },
+    {
+      "name": "NVIDIA NemoClaw",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "NVIDIA/NemoClaw",
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "description": "Reference stack that runs always-on agents like OpenClaw inside NVIDIA OpenShell sandboxes — isolation, declarative policy, and routed or fully local inference.",
+      "tags": ["sandboxing", "OpenShell", "local-inference"]
+    },
+    {
       "name": "Vanta AI Agent",
       "category": "compliance",
       "type": "commercial",
@@ -630,6 +657,15 @@
       "url": "https://github.com/danielmiessler/Fabric",
       "description": "Open framework of crowdsourced AI patterns, including security staples like analyze_threat_report, create_stride_threat_model, and write_semgrep_rule.",
       "tags": ["prompts", "patterns"]
+    },
+    {
+      "name": "OpenClaw",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "Self-hosted personal AI assistant and agent runtime with a huge skills ecosystem — commonly hardened with sandboxes like NemoClaw for safe operation.",
+      "tags": ["assistant", "self-hosted", "runtime"]
     }
   ]
 }

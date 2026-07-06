@@ -20,7 +20,7 @@
 
 ## What is this?
 
-Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **68 curated agents** — 33 open source, 32 commercial, 3 research — organized by where they act in the software lifecycle.
+Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **72 curated agents** — 37 open source, 32 commercial, 3 research — organized by where they act in the software lifecycle.
 
 Every entry is checked for a working link and a real, shipped capability. No vaporware.
 
@@ -41,12 +41,12 @@ flowchart LR
 - [Threat Modeling & Design](#threat-modeling--design) — 2 agents
 - [Code Security & Review](#code-security--review) — 13 agents
 - [Dependencies & Supply Chain](#dependencies--supply-chain) — 3 agents
-- [Infrastructure, Cloud & Kubernetes](#infrastructure-cloud--kubernetes) — 5 agents
+- [Infrastructure, Cloud & Kubernetes](#infrastructure-cloud--kubernetes) — 6 agents
 - [Offensive Security & Pentesting](#offensive-security--pentesting) — 13 agents
 - [SOC, Detection & Response](#soc-detection--response) — 12 agents
-- [LLM & Agent Security](#llm--agent-security) — 10 agents
+- [LLM & Agent Security](#llm--agent-security) — 12 agents
 - [Compliance & Governance](#compliance--governance) — 2 agents
-- [Frameworks & Building Blocks](#frameworks--building-blocks) — 8 agents
+- [Frameworks & Building Blocks](#frameworks--building-blocks) — 9 agents
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -102,6 +102,7 @@ flowchart LR
 | **HolmesGPT** | 🟢 Open Source | 24/7 AI on-call agent that investigates alerts from Prometheus, PagerDuty, and more by pulling live cluster data and correlating root cause. | [Code](https://github.com/HolmesGPT/holmesgpt) |
 | **Gomboc.ai** | 🟣 Commercial | Deterministic AI remediation for cloud infrastructure: generates policy-compliant fixes for Terraform and CloudFormation. | [Site](https://gomboc.ai) |
 | **Sysdig Sage** | 🟣 Commercial | AI cloud-security analyst built on runtime insights — multi-step reasoning over CNAPP findings from detection to remediation. | [Site](https://sysdig.com) |
+| **kagent** | 🟢 Open Source | CNCF framework for running agentic AI natively in Kubernetes — declarative agents and MCP tools for DevOps, troubleshooting, and security operations. | [Code](https://github.com/kagent-dev/kagent) |
 
 ### Offensive Security & Pentesting
 
@@ -158,6 +159,8 @@ flowchart LR
 | **Giskard** | 🟢 Open Source | Open-source evaluation and security testing that automatically detects performance, bias, and security issues in AI models and agents. | [Code](https://github.com/Giskard-AI/giskard-oss) |
 | **DeepTeam** | 🟢 Open Source | LLM red-teaming framework that simulates 40+ attack types against agents and chatbots, mapped to OWASP LLM Top 10 and NIST AI RMF. | [Code](https://github.com/confident-ai/deepteam) |
 | **Agentic Radar** | 🟢 Open Source | Scanner for agentic workflows (LangGraph, CrewAI, n8n, OpenAI Agents) that maps dependencies, detects vulnerabilities, and audits tool use. | [Code](https://github.com/splx-ai/agentic-radar) |
+| **agentgateway** | 🟢 Open Source | Rust data plane for agentic AI — authentication, authorization, guardrails, and observability for MCP tool calls and agent-to-agent traffic. | [Code](https://github.com/agentgateway/agentgateway) |
+| **NVIDIA NemoClaw** | 🟢 Open Source | Reference stack that runs always-on agents like OpenClaw inside NVIDIA OpenShell sandboxes — isolation, declarative policy, and routed or fully local inference. | [Code](https://github.com/NVIDIA/NemoClaw) |
 
 ### Compliance & Governance
 
@@ -182,6 +185,7 @@ flowchart LR
 | **MCP for Security** | 🟢 Open Source | Collection of MCP servers for security tooling — nmap, ffuf, masscan, sqlmap — so any MCP-capable agent can drive them. | [Code](https://github.com/cyproxio/mcp-for-security) |
 | **Semgrep MCP** | 🟢 Open Source | Official MCP server exposing Semgrep scanning to AI agents and coding assistants. | [Code](https://github.com/semgrep/mcp) |
 | **Fabric** | 🟢 Open Source | Open framework of crowdsourced AI patterns, including security staples like analyze_threat_report, create_stride_threat_model, and write_semgrep_rule. | [Code](https://github.com/danielmiessler/Fabric) |
+| **OpenClaw** | 🟢 Open Source | Self-hosted personal AI assistant and agent runtime with a huge skills ecosystem — commonly hardened with sandboxes like NemoClaw for safe operation. | [Code](https://github.com/openclaw/openclaw) |
 
 ---
 
