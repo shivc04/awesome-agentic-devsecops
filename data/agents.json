@@ -666,6 +666,24 @@
       "url": "https://github.com/openclaw/openclaw",
       "description": "Self-hosted personal AI assistant and agent runtime with a huge skills ecosystem — commonly hardened with sandboxes like NemoClaw for safe operation.",
       "tags": ["assistant", "self-hosted", "runtime"]
+    },
+    {
+      "name": "Langflow",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "langflow-ai/langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "description": "Visual low-code builder for agentic workflows — drag-and-drop composition of agents, tools, and RAG pipelines, deployable as APIs.",
+      "tags": ["low-code", "visual-builder", "workflows"]
+    },
+    {
+      "name": "Langfuse",
+      "category": "frameworks",
+      "type": "open-source",
+      "github": "langfuse/langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "description": "Open-source LLM engineering platform — tracing, evals, and prompt management that give agent pipelines the audit trail security teams need.",
+      "tags": ["observability", "tracing", "evals"]
     }
   ]
 }

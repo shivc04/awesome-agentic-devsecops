@@ -20,7 +20,7 @@
 
 ## What is this?
 
-Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **72 curated agents** — 37 open source, 32 commercial, 3 research — organized by where they act in the software lifecycle.
+Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **74 curated agents** — 39 open source, 32 commercial, 3 research — organized by where they act in the software lifecycle.
 
 Every entry is checked for a working link and a real, shipped capability. No vaporware.
 
@@ -46,7 +46,7 @@ flowchart LR
 - [SOC, Detection & Response](#soc-detection--response) — 12 agents
 - [LLM & Agent Security](#llm--agent-security) — 12 agents
 - [Compliance & Governance](#compliance--governance) — 2 agents
-- [Frameworks & Building Blocks](#frameworks--building-blocks) — 9 agents
+- [Frameworks & Building Blocks](#frameworks--building-blocks) — 11 agents
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -186,6 +186,8 @@ flowchart LR
 | **Semgrep MCP** | 🟢 Open Source | Official MCP server exposing Semgrep scanning to AI agents and coding assistants. | [Code](https://github.com/semgrep/mcp) |
 | **Fabric** | 🟢 Open Source | Open framework of crowdsourced AI patterns, including security staples like analyze_threat_report, create_stride_threat_model, and write_semgrep_rule. | [Code](https://github.com/danielmiessler/Fabric) |
 | **OpenClaw** | 🟢 Open Source | Self-hosted personal AI assistant and agent runtime with a huge skills ecosystem — commonly hardened with sandboxes like NemoClaw for safe operation. | [Code](https://github.com/openclaw/openclaw) |
+| **Langflow** | 🟢 Open Source | Visual low-code builder for agentic workflows — drag-and-drop composition of agents, tools, and RAG pipelines, deployable as APIs. | [Code](https://github.com/langflow-ai/langflow) |
+| **Langfuse** | 🟢 Open Source | Open-source LLM engineering platform — tracing, evals, and prompt management that give agent pipelines the audit trail security teams need. | [Code](https://github.com/langfuse/langfuse) |
 
 ---
 
