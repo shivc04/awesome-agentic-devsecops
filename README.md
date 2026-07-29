@@ -112,6 +112,7 @@ flowchart LR
 |---|---|---|---|
 | **XBOW** | 🟣 Commercial | Autonomous penetration tester that reached #1 on HackerOne's US leaderboard, finding and validating exploits without human operators. | [Site](https://xbow.com) |
 | **PentestGPT** | 🟢 Open Source | GPT-powered penetration-testing assistant that guides recon, exploitation, and privilege escalation — backed by USENIX Security research. | [Code](https://github.com/GreyDGL/PentestGPT) |
+| **Darkmoon** | 🟢 Open Source | Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes, exposed to agents through a built in MCP server. | [GitHub](https://github.com/ASCIT31/Dark-Moon) |
 | **PentAGI** | 🟢 Open Source | Fully autonomous multi-agent pentesting system — specialized agents with isolated Docker tooling, long-term memory, and reporting. | [Code](https://github.com/vxcontrol/pentagi) |
 | **hackingBuddyGPT** | 🟢 Open Source | Research framework from TU Wien for building LLM agents that attempt privilege escalation and web pentests autonomously. | [Code](https://github.com/ipa-lab/hackingBuddyGPT) |
 | **HexStrike AI** | 🟢 Open Source | MCP server that lets AI agents orchestrate 150+ security tools — nmap, Burp, Metasploit — for automated recon and exploitation workflows. | [Code](https://github.com/0x4m4/hexstrike-ai) |
