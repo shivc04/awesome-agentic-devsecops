@@ -203,10 +203,6 @@ Found an agent that belongs here? The whole project — README **and** website �
 2. Run `npm run readme` to regenerate this file.
 3. Open a pull request. 🎉
 
-## Inspiration
-
-Structure inspired by [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects).
-
 ## License
 
 [MIT](LICENSE) — curated with ❤️ for the DevSecOps community.
