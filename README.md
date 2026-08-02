@@ -20,7 +20,7 @@
 
 ## What is this?
 
-Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **74 curated agents** — 39 open source, 32 commercial, 3 research — organized by where they act in the software lifecycle.
+Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **78 curated agents** — 41 open source, 34 commercial, 3 research — organized by where they act in the software lifecycle.
 
 Every entry is checked for a working link and a real, shipped capability. No vaporware.
 
@@ -39,12 +39,12 @@ flowchart LR
 ## Contents
 
 - [Threat Modeling & Design](#threat-modeling--design) — 2 agents
-- [Code Security & Review](#code-security--review) — 13 agents
+- [Code Security & Review](#code-security--review) — 14 agents
 - [Dependencies & Supply Chain](#dependencies--supply-chain) — 3 agents
 - [Infrastructure, Cloud & Kubernetes](#infrastructure-cloud--kubernetes) — 6 agents
-- [Offensive Security & Pentesting](#offensive-security--pentesting) — 13 agents
-- [SOC, Detection & Response](#soc-detection--response) — 12 agents
-- [LLM & Agent Security](#llm--agent-security) — 12 agents
+- [Offensive Security & Pentesting](#offensive-security--pentesting) — 14 agents
+- [SOC, Detection & Response](#soc-detection--response) — 13 agents
+- [LLM & Agent Security](#llm--agent-security) — 13 agents
 - [Compliance & Governance](#compliance--governance) — 2 agents
 - [Frameworks & Building Blocks](#frameworks--building-blocks) — 11 agents
 - [Contributing](#contributing)
@@ -80,6 +80,7 @@ flowchart LR
 | **DryRun Security** | 🟣 Commercial | Contextual security analysis for pull requests using AI agents that reason about authz, injection, and business-logic risk. | [Site](https://www.dryrun.security) |
 | **Vulnhuntr** | 🟢 Open Source | LLM-based static analyzer that autonomously chains multi-step, remotely exploitable vulnerabilities in Python code — credited with real 0-days. | [Code](https://github.com/protectai/vulnhuntr) |
 | **Ghost Security** | 🟣 Commercial | Agentic application-security platform whose autonomous agents map applications, APIs, and vulnerabilities at enterprise scale. | [Site](https://ghost.security) |
+| **CodeRabbit** | 🟣 Commercial | AI pull-request reviewer that flags security, correctness, and style issues in-line, with free unlimited use on open-source repos. | [Site](https://coderabbit.ai) |
 
 ### Dependencies & Supply Chain
 
@@ -123,6 +124,7 @@ flowchart LR
 | **Buttercup** | 🟢 Open Source | Trail of Bits' open-sourced AIxCC cyber-reasoning system: agents that autonomously find and patch vulnerabilities in C and Java. | [Code](https://github.com/trailofbits/buttercup) |
 | **Cybench** | 🟡 Research | Stanford benchmark evaluating LLM agents on professional CTF tasks — the reference eval for offensive agent capability. | [Code](https://github.com/andyzorigin/cybench) |
 | **Escape** | 🟣 Commercial | Agentic DAST for APIs and business logic — AI agents explore, attack, and validate findings against running applications. | [Site](https://escape.tech) |
+| **PentesterFlow** | 🟢 Open Source | Human-in-the-loop agentic CLI for pentesters and bug bounty hunters — automates recon-to-reporting with Burp Suite integration and permission-gated tool execution. | [Code](https://github.com/PentesterFlow/agent) |
 
 ### SOC, Detection & Response
 
@@ -142,6 +144,7 @@ flowchart LR
 | **Uncoder AI** | 🟣 Commercial | SOC Prime's AI for detection engineering — translates detection rules across SIEM/EDR query languages and drafts rules from threat reports. | [Site](https://uncoder.io) |
 | **VirusTotal Code Insight** | 🟣 Commercial | Google's AI feature that explains what submitted code and scripts actually do, summarizing malicious behavior in natural language. | [Site](https://blog.virustotal.com/2023/04/introducing-virustotal-code-insight.html) |
 | **Google Sec-Gemini** | 🟡 Research | Google's experimental security-specialist model combining Gemini reasoning with near-real-time threat intelligence. | [Site](https://security.googleblog.com/2025/04/google-launches-sec-gemini-v1-new.html) |
+| **Stairwell Backstory** | 🟣 Commercial | Agentic investigation platform that traces related malware variants and maps an incident's full blast radius across the environment in seconds. | [Site](https://www.stairwell.com) |
 
 ### LLM & Agent Security
 
@@ -161,6 +164,7 @@ flowchart LR
 | **Agentic Radar** | 🟢 Open Source | Scanner for agentic workflows (LangGraph, CrewAI, n8n, OpenAI Agents) that maps dependencies, detects vulnerabilities, and audits tool use. | [Code](https://github.com/splx-ai/agentic-radar) |
 | **agentgateway** | 🟢 Open Source | Rust data plane for agentic AI — authentication, authorization, guardrails, and observability for MCP tool calls and agent-to-agent traffic. | [Code](https://github.com/agentgateway/agentgateway) |
 | **NVIDIA NemoClaw** | 🟢 Open Source | Reference stack that runs always-on agents like OpenClaw inside NVIDIA OpenShell sandboxes — isolation, declarative policy, and routed or fully local inference. | [Code](https://github.com/NVIDIA/NemoClaw) |
+| **Microsoft Agent Governance Toolkit** | 🟢 Open Source | Runtime governance for autonomous AI agents — policy enforcement, zero-trust identity, and execution sandboxing covering all 10 OWASP Agentic AI Top 10 risks. | [Code](https://github.com/microsoft/agent-governance-toolkit) |
 
 ### Compliance & Governance
 

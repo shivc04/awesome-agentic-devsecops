@@ -177,6 +177,14 @@
       "tags": ["appsec", "API"]
     },
     {
+      "name": "CodeRabbit",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://coderabbit.ai",
+      "description": "AI pull-request reviewer that flags security, correctness, and style issues in-line, with free unlimited use on open-source repos.",
+      "tags": ["PR-review", "SAST"]
+    },
+    {
       "name": "Socket",
       "category": "supply-chain",
       "type": "commercial",
@@ -367,6 +375,15 @@
       "tags": ["DAST", "API"]
     },
     {
+      "name": "PentesterFlow",
+      "category": "offensive",
+      "type": "open-source",
+      "github": "PentesterFlow/agent",
+      "url": "https://github.com/PentesterFlow/agent",
+      "description": "Human-in-the-loop agentic CLI for pentesters and bug bounty hunters — automates recon-to-reporting with Burp Suite integration and permission-gated tool execution.",
+      "tags": ["pentest", "CLI", "bug-bounty"]
+    },
+    {
       "name": "Microsoft Security Copilot",
       "category": "soc",
       "type": "commercial",
@@ -461,6 +478,14 @@
       "url": "https://security.googleblog.com/2025/04/google-launches-sec-gemini-v1-new.html",
       "description": "Google's experimental security-specialist model combining Gemini reasoning with near-real-time threat intelligence.",
       "tags": ["threat-intel", "model"]
+    },
+    {
+      "name": "Stairwell Backstory",
+      "category": "soc",
+      "type": "commercial",
+      "url": "https://www.stairwell.com",
+      "description": "Agentic investigation platform that traces related malware variants and maps an incident's full blast radius across the environment in seconds.",
+      "tags": ["malware", "incident-response"]
     },
     {
       "name": "garak",
@@ -569,6 +594,15 @@
       "url": "https://github.com/NVIDIA/NemoClaw",
       "description": "Reference stack that runs always-on agents like OpenClaw inside NVIDIA OpenShell sandboxes — isolation, declarative policy, and routed or fully local inference.",
       "tags": ["sandboxing", "OpenShell", "local-inference"]
+    },
+    {
+      "name": "Microsoft Agent Governance Toolkit",
+      "category": "llm-security",
+      "type": "open-source",
+      "github": "microsoft/agent-governance-toolkit",
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "description": "Runtime governance for autonomous AI agents — policy enforcement, zero-trust identity, and execution sandboxing covering all 10 OWASP Agentic AI Top 10 risks.",
+      "tags": ["OWASP", "policy-enforcement", "sandboxing"]
     },
     {
       "name": "Vanta AI Agent",
