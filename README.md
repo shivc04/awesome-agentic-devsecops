@@ -20,7 +20,7 @@
 
 ## What is this?
 
-Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **78 curated agents** — 41 open source, 34 commercial, 3 research — organized by where they act in the software lifecycle.
+Security teams are drowning in alerts, reviews, and audits — and a new generation of **AI agents** is taking over the repetitive parts. This list maps that landscape end to end: **80 curated agents** — 41 open source, 36 commercial, 3 research — organized by where they act in the software lifecycle.
 
 Every entry is checked for a working link and a real, shipped capability. No vaporware.
 
@@ -39,13 +39,13 @@ flowchart LR
 ## Contents
 
 - [Threat Modeling & Design](#threat-modeling--design) — 2 agents
-- [Code Security & Review](#code-security--review) — 14 agents
+- [Code Security & Review](#code-security--review) — 15 agents
 - [Dependencies & Supply Chain](#dependencies--supply-chain) — 3 agents
 - [Infrastructure, Cloud & Kubernetes](#infrastructure-cloud--kubernetes) — 6 agents
 - [Offensive Security & Pentesting](#offensive-security--pentesting) — 14 agents
 - [SOC, Detection & Response](#soc-detection--response) — 13 agents
 - [LLM & Agent Security](#llm--agent-security) — 13 agents
-- [Compliance & Governance](#compliance--governance) — 2 agents
+- [Compliance & Governance](#compliance--governance) — 3 agents
 - [Frameworks & Building Blocks](#frameworks--building-blocks) — 11 agents
 - [Contributing](#contributing)
 - [License](#license)
@@ -81,6 +81,7 @@ flowchart LR
 | **Vulnhuntr** | 🟢 Open Source | LLM-based static analyzer that autonomously chains multi-step, remotely exploitable vulnerabilities in Python code — credited with real 0-days. | [Code](https://github.com/protectai/vulnhuntr) |
 | **Ghost Security** | 🟣 Commercial | Agentic application-security platform whose autonomous agents map applications, APIs, and vulnerabilities at enterprise scale. | [Site](https://ghost.security) |
 | **CodeRabbit** | 🟣 Commercial | AI pull-request reviewer that flags security, correctness, and style issues in-line, with free unlimited use on open-source repos. | [Site](https://coderabbit.ai) |
+| **heygrc** | 🟣 Commercial | GitHub App that reviews every pull request against compliance frameworks, flags control-risk changes, and cites the exact control clause. By ISMS Copilot. | [Site](https://heygrc.com) |
 
 ### Dependencies & Supply Chain
 
@@ -174,6 +175,7 @@ flowchart LR
 |---|---|---|---|
 | **Vanta AI Agent** | 🟣 Commercial | AI agent for continuous compliance — automates evidence collection, policy gap analysis, and SOC 2 / ISO 27001 audit preparation. | [Site](https://www.vanta.com) |
 | **Drata AI** | 🟣 Commercial | Compliance automation with AI that maps controls, drafts policies, and answers security questionnaires. | [Site](https://drata.com) |
+| **ISMS Copilot** | 🟣 Commercial | Specialized AI assistant for ISO 27001, SOC 2, NIS 2, GDPR, DORA, and related frameworks: policy drafting, control mapping, risk assessments, and audit prep. | [Site](https://www.ismscopilot.com) |
 
 ### Frameworks & Building Blocks
 

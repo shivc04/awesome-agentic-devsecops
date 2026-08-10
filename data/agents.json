@@ -718,6 +718,22 @@
       "url": "https://github.com/langfuse/langfuse",
       "description": "Open-source LLM engineering platform — tracing, evals, and prompt management that give agent pipelines the audit trail security teams need.",
       "tags": ["observability", "tracing", "evals"]
+    },
+    {
+      "name": "heygrc",
+      "category": "code-security",
+      "type": "commercial",
+      "url": "https://heygrc.com",
+      "description": "GitHub App that reviews every pull request against compliance frameworks, flags control-risk changes, and cites the exact control clause. By ISMS Copilot.",
+      "tags": ["compliance", "pull-request", "GRC", "GitHub-App"]
+    },
+    {
+      "name": "ISMS Copilot",
+      "category": "compliance",
+      "type": "commercial",
+      "url": "https://www.ismscopilot.com",
+      "description": "Specialized AI assistant for ISO 27001, SOC 2, NIS 2, GDPR, DORA, and related frameworks: policy drafting, control mapping, risk assessments, and audit prep.",
+      "tags": ["ISO-27001", "GRC", "compliance", "audit"]
     }
   ]
 }
